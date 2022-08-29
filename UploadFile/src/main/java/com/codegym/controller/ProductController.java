@@ -23,7 +23,7 @@ import java.util.List;
 @RequestMapping("/product")
 public class ProductController {
 
-    @Value("${file-upload}")
+    @Value("D:\\image\\")
     private String fileUpload;
 
     private final IProductService productService = new ProductService();
