@@ -32,6 +32,7 @@ public class CustomerController {
         customerService.save(customer);
         return "redirect:/customer";
     }
+
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable int id, Model model) {
         model.addAttribute("customer", customerService.findById(id));
